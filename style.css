@@ -1,0 +1,256 @@
+@import url('https://fonts.googleapis.com/css?family=Open+Sans:300');
+
+body,
+html {
+    margin: 0px;
+    height: 100%;
+
+    min-width: 550px !important;
+    scroll-behavior: smooth;
+}
+
+#loaderBg {
+    width: 100%;
+    height: 100%;
+    background-image: url('https://makeawebsitehub.com/wp-content/uploads/2016/04/social_media.jpg');
+    z-index: 29;
+    position: fixed;
+}
+
+#loader {
+    display: inline-block;
+    width: 60px;
+    height: 60px;
+    position: absolute;
+    z-index: 30;
+    border: 4px solid #Fff;
+    left: 50%;
+    top: 20%;
+    animation: loader 2s infinite ease;
+}
+
+#loader-inner {
+    vertical-align: top;
+    display: inline-block;
+    width: 100%;
+    animation: loader-inner 2s infinite ease-in;
+}
+
+@keyframes loader {
+    0% {
+        transform: rotate(0deg);
+    }
+
+    25% {
+        transform: rotate(180deg);
+    }
+
+    50% {
+        transform: rotate(180deg);
+    }
+
+    75% {
+        transform: rotate(360deg);
+    }
+
+    100% {
+        transform: rotate(360deg);
+    }
+}
+
+@keyframes loader-inner {
+    0% {
+        height: 0%;
+    }
+
+    25% {
+        height: 0%;
+    }
+
+    50% {
+        height: 100%;
+    }
+
+    75% {
+        height: 100%;
+    }
+
+    100% {
+        height: 0%;
+    }
+}
+
+/* Welcome Page */
+#Typewriter{
+    height: 70%;
+    width: 100%;
+    z-index: 10;
+    background-image: url('https://makeawebsitehub.com/wp-content/uploads/2016/04/social_media.jpg');
+    background-size: cover;
+    background-attachment: fixed;
+    position: relative;
+    text-align: center;
+    font-family: 'Open Sans', sans-serif;
+    overflow: hidden;
+}
+
+
+#writeBox {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    margin: auto;
+    height: 30%;
+
+}
+
+#title {
+    font-size: 90px;
+    font-weight: 900;
+    color: rgb(7, 45, 102);
+    text-shadow: 0 1px 0 #ccc,
+    0 2px 0 #c9c9c9,
+    0 3px 0 #bbb,
+    0 4px 0 #b9b9b9,
+    0 5px 0 #aaa,
+    0 6px 1px rgba(0,0,0,.1),
+    0 0 5px rgba(0,0,0,.1),
+    0 1px 3px rgba(0,0,0,.3),
+    0 3px 5px rgba(0,0,0,.2),
+    0 5px 10px rgba(0,0,0,.25),
+    0 10px 10px rgba(0,0,0,.2),
+    0 20px 20px rgba(0,0,0,.15);
+}
+
+hr.Line {
+    border-top: 3px solid rgb(0, 0, 0);
+    width: 25%;
+}
+
+#medialist {
+    font-size: 100px;
+    font-weight: 900;
+    color: rgb(29, 4, 4);
+    display: inline;
+    position: relative;
+    font: 200px Helvetica, Sans-Serif;
+    letter-spacing: -5px;
+    color: rgba(255, 123, 0, 0.788); 
+}
+
+
+
+h1{
+    display: flex;
+    justify-content: center;
+}
+
+h2 {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 0;
+  font-size: 60px;
+}
+
+h3 {
+  margin: 0;
+  font-weight: normal;
+  font-size:50px ;
+  display: flex;
+  justify-content: center;
+}
+
+p {
+  display: flex;
+  justify-content: center;
+  font-weight: lighter;
+  font-size: 3rem;
+}
+
+#contentGrid {
+  padding: 2vmin;
+  font-size: 1.5rem;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-row-gap: 3vmin;
+  grid-column-gap: 3vmin;
+}
+
+.contentItem {
+  display: flex;
+  flex-direction: column;
+  padding: 1vmin;
+  border: 4px solid rgb(0, 0, 0);
+  height: 100%;
+}
+
+.footerImage {
+  width: 100%;
+  height: 500px;
+  object-fit: cover;
+}
+
+.message{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-row-gap: 3vmin;
+    grid-column-gap: 3vmin;
+    position: relative;
+    width: 100%;
+    height: 100%;
+    margin-top: 5%;
+    margin-left: 2%;
+    margin-right: 2%;
+}
+.message img{
+    width: 750px;
+    height: 500px;
+}
+.message p{
+    font-size: 45px;
+}
+.transition{
+    position: absolute;
+    top: 0;
+    left: 0;
+    opacity: 0;
+    transition: opacity 0.8s ease;
+}
+.transition:hover{
+    opacity: 1;
+}
+.transition2{
+    position: absolute;
+    top: 0;
+    right: 5%;
+    opacity: 0;
+    transition: opacity 0.8s ease;
+    color: white;
+}
+.transition2:hover{
+    opacity: 1;
+}
+
+.transition1a{
+    position: absolute;
+    top: 530px;
+    left: 0;
+    opacity: 0;
+    transition: opacity 0.8s ease;
+}
+.transition1a:hover{
+    opacity: 1;
+}
+.transition2a{
+    position: absolute;
+    top: 530px;
+    right: 4.5%;
+    opacity: 0;
+    transition: opacity 0.8s ease;
+    color: white;
+}
+.transition2a:hover{
+    opacity: 1;
+}
